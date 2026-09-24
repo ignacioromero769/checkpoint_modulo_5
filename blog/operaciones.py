@@ -26,7 +26,7 @@ def buscar_por_titulo_funcion(lista, termino):
         try:
             if busqueda in post.titulo.lower():
                 encontro = True
-                print(f"{- post.titulo})
+                print(f"{- post.titulo}")
         except AttributeError:
             continue
         except TypeError:
