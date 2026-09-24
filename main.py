@@ -1,63 +1,51 @@
 if __name__ == "__main__":
-    from blog.datos import posts
     from blog.menu import mostrar_menu
-    from blog.operaciones import listar_posts, buscar_por_titulo, filtrar_por_tag
-    from blog.validaciones import validar_post
+    from blog.modelos import Blog, Post, Autor
+    from blog.operaciones import asignar_autor
+    blog = Blog()
+    autor = asignar_autor(Autor)
+    posts = blog.cargar_posts()
 
     while True:
-        
+
         # Mostrar el menu
         opcion = mostrar_menu()
         if not opcion:
             continue
 
         # Listar posts
-        if opcion == 1:
-            listar_posts(posts)
-            print("\n\n\n")
+        elif opcion == 1:
+            blog.listar_posts(posts)
 
         # Busqueda por titulo
         elif opcion == 2:
-            print("Ingrese el termino de busqueda: ")
-            termino = input("Ingrese: ")
+            blog.buscar_por_titulo(posts)
 
-            buscar_por_titulo(posts, termino)
-            print("\n\n\n")
-
-        # Filtrar por tag            
+        # Filtrar por tag
         elif opcion == 3:
-            print("Ingrese el tag: ")
-            tag = input("Ingrese: ")
-            filtrar_por_tag(posts, tag)
-            print("\n\n\n")
-            
-        # Validar posts
+            blog.filtrar_por_tag(posts)
+        
+        # Crear post
         elif opcion == 4:
-            print("Validando posts")
-            for post in posts:
-                es_valido, info = validar_post(post)
+            blog.crear_post(posts, autor=autor)
 
-                if es_valido:
-                    print(f"Post - '{post['titulo']}' - ID: {post['id']} - {info}")
-                    
-                elif info == None:
-                    print(f"Post - ID: ??? No es un diccionario.")
-                
-                else:
-                    post_id = post.get("id")
-                    if not post_id:
-                        post_id = "???"
-                    print(f"Post - '{post.get('titulo')}' - ID {post_id} - no es valido. {info}")
-
-            print("\n\n\n")
-            
-        # Salir    
+        # Validar posts
         elif opcion == 5:
-            print("Saliendo... ")
+            blog.validar_posts(posts)
+
+        # Guardar posts
+        elif opcion == 6:
+            blog.guardar_posts(posts)
+
+        # Salir
+        elif opcion == 7:
+            print("Saliendo")
             break
 
+        # Opcion invalida
         else:
             print("Por favor ingrese un numero valido")
+        print("\n\n\n")
 
     
-
+    

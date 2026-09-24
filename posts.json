@@ -1,0 +1,138 @@
+[
+    {
+        "id": null,
+        "titulo": null,
+        "contenido": null,
+        "autor": {
+            "nombre": "Sin autor",
+            "bio": "",
+            "especialidad": "",
+            "redes_sociales": []
+        },
+        "tags": null,
+        "estado": null
+    },
+    {
+        "id": null,
+        "titulo": null,
+        "contenido": null,
+        "autor": {
+            "nombre": "Sin autor",
+            "bio": "",
+            "especialidad": "",
+            "redes_sociales": []
+        },
+        "tags": null,
+        "estado": null
+    },
+    {
+        "id": 1,
+        "titulo": "12ee21",
+        "contenido": null,
+        "autor": {
+            "nombre": "Jose Manuel",
+            "bio": null,
+            "especialidad": 41,
+            "redes_sociales": "rtede"
+        },
+        "tags": [
+            "1e2e12"
+        ],
+        "estado": "publicado"
+    },
+    {
+        "id": 2,
+        "titulo": "Empezando con java",
+        "contenido": "En este post empezamos a ver el lenguaje java",
+        "autor": {
+            "nombre": "Jose Manuel",
+            "bio": "Programador experto en java",
+            "especialidad": "Java, Javascript y Python",
+            "redes_sociales": [
+                "@josemanueljava",
+                "@programacionjavamanu"
+            ]
+        },
+        "tags": [
+            "Java",
+            "Principiantes"
+        ],
+        "estado": "publicado"
+    },
+    {
+        "id": 3,
+        "titulo": "Programacion avanzada con java",
+        "contenido": "En este post vamos a avanzar mas con java",
+        "autor": {
+            "nombre": "Jose Manuel",
+            "bio": "Programador experto en java",
+            "especialidad": "Java, Javascript y Python",
+            "redes_sociales": [
+                "@josemanueljava",
+                "@programacionjavamanu"
+            ]
+        },
+        "tags": [
+            "Java",
+            "Avanzado"
+        ],
+        "estado": "publicado"
+    },
+    {
+        "id": 4,
+        "titulo": "Programacion con javascript",
+        "contenido": "Aqui vamos a empezar a ver javascript",
+        "autor": {
+            "nombre": "Jose Manuel",
+            "bio": "Programador experto en java",
+            "especialidad": "Java, Javascript y Python",
+            "redes_sociales": [
+                "@josemanueljava",
+                "@programacionjavamanu"
+            ]
+        },
+        "tags": [
+            "Javascript",
+            "Principiantes"
+        ],
+        "estado": "archivado"
+    },
+    {
+        "id": 5,
+        "titulo": "Usar python en lugar de java",
+        "contenido": "¿Es mejor python que java?",
+        "autor": {
+            "nombre": "Jose Manuel",
+            "bio": "Programador experto en java",
+            "especialidad": "Java, Javascript y Python",
+            "redes_sociales": [
+                "@josemanueljava",
+                "@programacionjavamanu"
+            ]
+        },
+        "tags": [
+            "Python",
+            "Opinion"
+        ],
+        "estado": "borrador"
+    },
+    {
+        "id": 6,
+        "titulo": "Python es lo mejor",
+        "contenido": "Python es tal vez el mejor lenguaje de programacion que hay",
+        "autor": {
+            "nombre": "Jose Manuel",
+            "bio": "Programador experto en java",
+            "especialidad": "Java, Javascript y Python",
+            "redes_sociales": [
+                "@josemanueljava",
+                "@programacionjavamanu"
+            ]
+        },
+        "tags": [
+            "Python",
+            "Opinion"
+        ],
+        "estado": "publicado"
+    }
+]
